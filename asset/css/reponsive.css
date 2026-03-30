@@ -217,6 +217,11 @@
     grid-template-columns: repeat(0.5fr 0.5fr 1fr);
   }
 
+  .footer-form__submit {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+
   /* Tắt LogIn,Out trên tablet */
   .show-on-mobile {
     display: none;
@@ -225,30 +230,29 @@
 
 /* Mobile */
 @media (max-width: 767.98px) {
-  /* ẩn nút */
   .header__action {
     display: none;
   }
 
   .menu-header__icon {
-    top: 15px;
+    top: 16px;
   }
 
   .menu-drawer {
-    padding: 30px;
     inset: 0 20% 0 0;
+    padding: 40px;
   }
 
   .navbar__item {
     list-style-type: none;
   }
 
+  /* thêm vạch kẻ ngăn cta group */
   .separate {
     border-top: 1.5px solid #8c8b8b;
     margin-top: 10px;
   }
-
-  /* Hero */
+  /* hero */
   .hero__img-small {
     display: none;
   }
@@ -257,66 +261,51 @@
     width: 100%;
     height: auto;
   }
-
   .hero__heading {
     font-size: 3rem;
   }
-
   .hero__row {
     flex-direction: column;
     row-gap: 20px;
   }
-
-  /* Services */
+  /* service */
   .service {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 
   .service__desc {
-    width: 100%;
+    width: 93%;
   }
 
   .service__img {
-    width: 100%;
     height: auto;
   }
 
-  /* Works */
-  .work {
-    padding: 0;
-  }
-
-  .section-heading {
-    text-align: center;
-  }
-
+  /* work */
   .work__desc {
     width: 100%;
-    text-align: center;
   }
 
   .work-item {
     padding: 20px;
   }
 
+  /* about */
   .about {
-    padding: 10px 0 30px;
-  }
-
-  /* Team */
-  .team__list {
-    grid-template-columns: 1fr;
-  }
-
-  .team {
-    padding: 50px 0;
+    margin-top: 20px;
+    padding: 40px 0;
   }
 
   .section-heading {
     font-size: 3rem;
   }
 
-  /* Install */
+  /* team */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* install */
   .install__inner {
     margin: 40px 0;
     padding: 0 8px;
@@ -330,19 +319,25 @@
     font-size: 1.3rem;
   }
 
-  /* Blog */
   .blog__list {
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+
+  .blog__heading {
+    text-align: center;
   }
 
   .appointment__inner {
     padding: 30px 5px;
   }
 
-  /* Footer */
   .footer__top {
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
   }
 }
